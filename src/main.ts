@@ -22,7 +22,7 @@ const insertCheckbox = (root: Element) => {
   root.classList.add("checkerContainer");
   root.classList.add("checkerContainerLink");
   const container = root.querySelector(ITEMS_CONTAINER);
-  container?.classList.add("checkerContainerLink");
+  // container?.classList.add("checkerContainerLink");
   container?.append(getCheckbox());
 };
 
