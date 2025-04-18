@@ -1,7 +1,7 @@
 .checkerContainer {
   position: relative;
-  --height: 100px;
   overflow: hidden;
+  --height: 100px;
 
   &:has(.checkerCheckbox:checked) {
     height: var(--height);
