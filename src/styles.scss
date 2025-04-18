@@ -5,7 +5,8 @@
   max-height: 500px;
   transition: 0.25s ease;
 
-  &:has(.checkerCheckbox:checked) {
+  &:has(.checkerCheckbox:checked),
+  &:has(a[href*="heert"]) {
     max-height: var(--height);
     opacity: 0.2;
   }
