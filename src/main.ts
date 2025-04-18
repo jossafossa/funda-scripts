@@ -6,13 +6,13 @@ const ITEMS_CONTAINER = "*:has(> button)";
 const getCheckbox = () => {
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  checkbox.classList.add("myCheckbox");
+  checkbox.classList.add("checkerCheckbox");
   return checkbox;
 };
 
 const insertCheckbox = (root: Element) => {
   const container = root.querySelector(ITEMS_CONTAINER);
-  container?.classList.add("myCheckboxContainer");
+  container?.classList.add("checkerContainer");
   if (!container) return;
 
   const checkbox = getCheckbox();
