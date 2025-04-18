@@ -20,10 +20,10 @@ const insertCheckbox = (root: Element) => {
   const id = getId(root);
   console.log({ id });
   root.classList.add("checkerContainer");
-  root.classList.add("checkerContainerLink");
+  // root.classList.add("checkerContainerLink");
   const container = root.querySelector(ITEMS_CONTAINER);
-  // container?.classList.add("checkerContainerLink");
-  container?.append(getCheckbox());
+  container?.classList.add("checkerContainerLink");
+  root?.append(getCheckbox());
 };
 
 document.querySelectorAll(ITEMS).forEach(insertCheckbox);
