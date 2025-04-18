@@ -11,7 +11,14 @@ const getCheckbox = () => {
   return checkbox;
 };
 
+const getId = (element: Element) => {
+  const id = element.querySelector("a")?.href.split("/").pop();
+  return id;
+};
+
 const insertCheckbox = (root: Element) => {
+  const id = getId(root);
+  console.log({ id });
   root.classList.add("checkerContainer");
   const container = root.querySelector(ITEMS_CONTAINER);
   container?.classList.add("checkerContainerLink");
