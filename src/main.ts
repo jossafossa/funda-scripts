@@ -1,5 +1,5 @@
 const ITEMS = "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > *";
-const ITEMS_CONTAINER = "*:has(> button[title])";
+const ITEMS_CONTAINER = "*:has(> button)";
 
 const getCheckbox = () => {
   const checkbox = document.createElement("input");
