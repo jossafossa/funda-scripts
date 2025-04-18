@@ -12,6 +12,7 @@ const getCheckbox = () => {
 
 const insertCheckbox = (root: Element) => {
   const container = root.querySelector(ITEMS_CONTAINER);
+  container?.classList.add("myCheckboxContainer");
   if (!container) return;
 
   const checkbox = getCheckbox();
