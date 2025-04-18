@@ -64,9 +64,7 @@ const insertCheckbox = (root: Element) => {
   root?.append(checkbox);
 };
 
-const init = () => {
-  document.querySelectorAll(ITEMS).forEach(insertCheckbox);
-};
+const init = () => document.querySelectorAll(ITEMS).forEach(insertCheckbox);
 
 init();
 setInterval(() => init(), 100);
