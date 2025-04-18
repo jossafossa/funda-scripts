@@ -44,6 +44,9 @@ const getId = (element: Element) => {
 };
 
 const insertCheckbox = (root: Element) => {
+  if (root.classList.contains("checkerContainer")) {
+    return;
+  }
   const id = getId(root);
   console.log({ id });
   root.classList.add("checkerContainer");
