@@ -1,3 +1,5 @@
+import "./styles.scss";
+
 const ITEMS = "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > *";
 const ITEMS_CONTAINER = "*:has(> button)";
 
