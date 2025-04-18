@@ -1,2 +1,9 @@
-body {
+.checkerContainer {
+  position: relative;
+}
+
+.checkerCheckbox {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
