@@ -1,1 +1,1 @@
-console.log("funda loaded");;
+console.log("funda loaded");
