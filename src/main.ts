@@ -14,7 +14,7 @@ const getCheckbox = () => {
 const getId = (element: Element) => {
   const id = (element.querySelector("h2 a") as HTMLAnchorElement)?.href
     .split("/")
-    .pop();
+    .unshift();
   return id;
 };
 
