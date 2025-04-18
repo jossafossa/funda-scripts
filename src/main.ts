@@ -2,7 +2,7 @@ import "./styles.scss";
 
 const ITEMS =
   "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > * > *:nth-last-child(1)";
-const ITEMS_CONTAINER = "a";
+const ITEMS_CONTAINER = "h2 a";
 
 const getCheckbox = () => {
   const checkbox = document.createElement("input");
@@ -12,7 +12,9 @@ const getCheckbox = () => {
 };
 
 const getId = (element: Element) => {
-  const id = element.querySelector("a")?.href.split("/").pop();
+  const id = (element.querySelector("h2 a") as HTMLAnchorElement)?.href
+    .split("/")
+    .pop();
   return id;
 };
 
