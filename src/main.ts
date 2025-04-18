@@ -14,6 +14,7 @@ const getCheckbox = () => {
 const insertCheckbox = (root: Element) => {
   root.classList.add("checkerContainer");
   const container = root.querySelector(ITEMS_CONTAINER);
+  container?.classList.add("checkerContainerLink");
   container?.append(getCheckbox());
 };
 
