@@ -11,6 +11,7 @@ const getCheckbox = () => {
 };
 
 const insertCheckbox = (root: Element) => {
+  root.classList.add("checkerCheckboxContainer");
   root?.append(getCheckbox());
 };
 
