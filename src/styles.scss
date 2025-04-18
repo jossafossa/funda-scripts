@@ -6,7 +6,7 @@
   transition: 0.25s ease;
 
   &:has(.checkerCheckbox:checked),
-  &:has(a[href*="heert"]) {
+  &:has(a[href*="heerd"]) {
     max-height: var(--height);
     opacity: 0.2;
   }
