@@ -11,8 +11,7 @@ const getCheckbox = () => {
 };
 
 const insertCheckbox = (root: Element) => {
-  const checkbox = getCheckbox();
-  root?.append(checkbox);
+  root?.append(getCheckbox());
 };
 
 document.querySelectorAll(ITEMS).forEach(insertCheckbox);
