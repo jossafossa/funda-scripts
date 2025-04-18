@@ -1,9 +1,12 @@
 .checkerContainer {
   overflow: hidden;
   --height: 50px;
+  max-height: 500px;
+  transition: 0.25s ease;
 
   &:has(.checkerCheckbox:checked) {
-    height: var(--height);
+    max-height: var(--height);
+    opacity: 0.2;
   }
 }
 
