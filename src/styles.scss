@@ -1,5 +1,4 @@
 .checkerContainer {
-  position: relative;
   overflow: hidden;
   --height: 100px;
   border: 1px solid red;
@@ -10,11 +9,12 @@
 }
 
 .checkerContainerLink {
+  position: relative;
 }
 
 .checkerCheckbox {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   height: var(--height);
 }

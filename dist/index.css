@@ -1,1 +1,1 @@
-.checkerContainer{position:relative;overflow:hidden;--height: 100px;border:1px solid red}.checkerContainer:has(.checkerCheckbox:checked){height:var(--height)}.checkerCheckbox{position:absolute;top:0;left:0;height:var(--height)}
+.checkerContainer{overflow:hidden;--height: 100px;border:1px solid red}.checkerContainer:has(.checkerCheckbox:checked){height:var(--height)}.checkerContainerLink{position:relative}.checkerCheckbox{position:absolute;top:0;right:0;height:var(--height)}
