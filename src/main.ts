@@ -1,3 +1,17 @@
 const ITEMS = "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > *";
+const ITEMS_CONTAINER = "*:has(> button[title])";
 
-console.log(document.querySelectorAll(ITEMS));
+const getCheckbox = () => {
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  return checkbox;
+};
+
+const insertCheckbox = (root: Element) => {
+  const container = root.querySelector(ITEMS_CONTAINER);
+  const checkbox = getCheckbox();
+  container?.append(checkbox);
+  if (!container) return;
+};
+
+document.querySelectorAll(ITEMS).forEach(insertCheckbox);
