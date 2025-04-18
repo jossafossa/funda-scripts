@@ -1,1 +1,1 @@
-.checkerContainer{position:relative}.checkerCheckbox{position:absolute;top:0;left:0}
+.checkerContainer{position:relative;--height: 100px}.checkerContainer:has(.checkerCheckbox:checked){height:var(--height)}.checkerCheckbox{position:absolute;top:0;left:0;height:var(--height)}
