@@ -1,7 +1,7 @@
 import "./styles.scss";
 
 const ITEMS =
-  "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > * > *:nth-last-child(1) a";
+  "#FilterPanel + div > .flex:has(a[href*='/detail/koop/']) > * > *:nth-last-child(1)";
 
 const getCheckbox = () => {
   const checkbox = document.createElement("input");
