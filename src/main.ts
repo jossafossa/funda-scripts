@@ -16,4 +16,4 @@ const insertCheckbox = (root: Element) => {
 };
 
 document.querySelectorAll(ITEMS).forEach(insertCheckbox);
-console.log("updated?");
+console.log("updated? asdasd");
